@@ -1,0 +1,381 @@
+/*
+#F5F5F5 - soft grey
+#646464 - deep grey
+*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&family=Work+Sans&display=swap");
+
+body {
+  text-align: center;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Work Sans", sans-serif;
+  background-color: #f5f5f5;
+  box-sizing: border-box;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.App {
+  text-align: center;
+}
+
+#logo {
+  width: 140px;
+  height: 140px;
+  margin-left: 0;
+}
+.App-logo {
+  height: 40vmin;
+}
+.home {
+  margin: 50px;
+  font-size: 24px;
+  color: #0d0d0d;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 8px 8px 0px 0px #222326;
+  border: #222326 1px solid;
+  width: 80%;
+  margin: auto;
+  height: 370px;
+  padding-top: 60px;
+  margin-top: 100px;
+}
+
+.home .voting_system_info {
+  list-style: none;
+}
+
+.App-header {
+  background-color: #181d31;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #6bbdae;
+}
+
+.candidate {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 90%;
+  margin: 50px;
+}
+
+.candidate:hover {
+  box-shadow: 0px 10px 10px 0px rgba(51, 50, 50, 0.6);
+}
+
+.candidateName {
+  font-size: 20px;
+  padding-left: 60px;
+  text-align: left;
+  color: #646464;
+  font-family: "Roboto Mono", monospace;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.candidateDetails {
+  background-color: #fff;
+  color: #000;
+  box-shadow: 8px 8px 0px 0px #222326;
+  border: #222326 1px solid;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 18px;
+}
+
+.CandidateDetails {
+  text-align: center;
+}
+.home_CandidateDetails {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.home_CandidateDetails:first-child {
+  justify-content: start;
+}
+
+.CandidateDetails-title {
+  color: #000;
+}
+.App .vote_slogan {
+  background-color: #646464;
+  color: #fff;
+}
+
+.App .vote_slogan h3 {
+  font-family: "Roboto Mono", monospace;
+  margin-top: 70px;
+  margin-bottom: -70px;
+}
+.home_CandidateDetails-title {
+  width: calc(100% - 260px);
+  justify-content: center;
+}
+
+.CandidateDetails-title h1 {
+  font-weight: 700;
+  font-family: "Roboto Mono", monospace;
+  font-size: calc(25px + 2vmin);
+}
+
+.CandidateDetails-sub-title {
+  background-color: #646464;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: #eeeeee;
+}
+
+h2.voting_request_form_title {
+  padding-bottom: 2.499rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: left;
+  font-family: "Roboto Mono", monospace;
+}
+
+#voting_request_form {
+  box-shadow: 8px 8px 0px 0px #222326;
+  border: #222326 1px solid;
+  transition: 0.3s;
+  width: 50%;
+  margin: auto;
+  margin-top: 130px;
+  background-color: #fff;
+  padding: 20px 30px;
+  border-radius: 5px;
+  height: 570px;
+}
+#voting_request_form_content {
+  margin-top: 35px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-input {
+  color: #eeeeee;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 18px;
+  width: 450px;
+  font-family: initial;
+  margin: auto;
+}
+
+.form-input .form-control {
+  color: #222326;
+  padding: 0.8rem 1.666rem;
+  box-shadow: 0 6px #222326;
+  border: 1.5px solid #222326;
+  border-radius: 0.2rem;
+  font-size: 1rem;
+  font-weight: 400;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  text-align: left;
+}
+
+.form-input .form-control::placeholder {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: left;
+  font-size: 16px;
+}
+
+.button-vote {
+  background-color: #646464;
+  border: none;
+  color: #fff;
+  padding: 0.4rem 1.666rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px auto;
+  cursor: pointer;
+  margin-top: 75px;
+  margin-bottom: 10px;
+  width: 20%;
+  border-radius: 0.2rem;
+  box-shadow: 0 6px #222326;
+  min-width: 200px;
+  font-family: "Roboto Mono", monospace;
+  text-transform: uppercase;
+}
+
+.button-vote:hover {
+  background-color: #000;
+}
+
+.CandidateDetails-mid-sub-title {
+  background-color: #283755;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: #eeeeee;
+  width: 90%;
+  margin: 50px;
+}
+
+.button-verified {
+  background-color: #3b7754;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.button-verify {
+  background-color: rgb(126, 13, 1);
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.button-verify:hover {
+  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.6);
+  background-color: #923626;
+}
+
+.admin-buttons {
+  margin: 20px;
+}
+
+.admin-buttons-start-s {
+  background-color: #3b7754;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.admin-buttons-start-s:hover {
+  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.6);
+  background-color: #a31b03;
+}
+
+.admin-buttons-start-e {
+  background-color: rgb(138, 16, 7);
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.admin-buttons-start-e:hover {
+  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.6);
+  background-color: #3b7754;
+}
+
+.admin-buttons-end-s {
+  background-color: #3b7754;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.admin-buttons-end-s:hover {
+  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.6);
+  background-color: #3b7754;
+}
+
+.admin-buttons-end-e {
+  background-color: #3b7754;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.admin-buttons-end-e:hover {
+  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.6);
+  background-color: #3b7754;
+}
+
+.navbar {
+  width: 100%;
+  padding-top: 20px;
+  overflow: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.navbar a {
+  margin: 0 30px;
+  padding: 15px;
+  color: black;
+  text-decoration: none;
+  font-size: 19px;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+.Admin {
+  background-color: #a31b03;
+  height: 25px;
+}
