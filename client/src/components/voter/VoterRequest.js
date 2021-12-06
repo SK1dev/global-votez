@@ -25,7 +25,7 @@ class VoterRequest extends Component {
   }
 
   updatename = event => {
-    this.setState({ fName: event.target.value });
+    this.setState({ name: event.target.value });
   }
 
   updateVoterId = event => {
@@ -122,7 +122,7 @@ class VoterRequest extends Component {
 
         {this.state.isOwner ? <NavigationAdmin /> : <Navigation />}
 
-        <div id='voting_request_form' classfName="form">
+        <div id='voting_request_form' className="form">
           <div>
             <h2 className="voting_request_form_title">Submit your request !</h2>
           </div>

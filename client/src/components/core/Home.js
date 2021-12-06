@@ -33,7 +33,7 @@ class Home extends Component {
         deployedNetwork && deployedNetwork.address,
       );
 
-      this.setState({ BallotInstance: instance, web3: web3, account: accounts[0] });
+      this.setState({ MasoomInstance: instance, web3: web3, account: accounts[0] });
 
       const owner = await this.state.BallotInstance.methods.getOwner().call();
       if(this.state.account === owner){
